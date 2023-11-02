@@ -15,9 +15,11 @@
 # ```
 # Примітка: Замініть "Tesla", "250" та "0.0" на власні значення, які ви ввели.
 
-carBrand = 'Toyota'
+carBrand = "Toyota"
 maxSpeed = 100
 fuelConsumption = 7.3
 
-print(f'Автомобіль марки {carBrand} може розвинути швидкість до {maxSpeed} км/год.')
-print(f'Витрати пального - {fuelConsumption} л/100км.')
+print(
+    f"Автомобіль марки {carBrand} може розвинути швидкість до {maxSpeed} км/год.\n"
+    + f"Витрати пального - {fuelConsumption} л/100км."
+)

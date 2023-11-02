@@ -6,5 +6,23 @@
 weight = float(input("Введіть свою вагу (кг) "))
 height = float(input("Введіть свій зріст (м) "))
 
+
+
 bmi = weight/(height*height)
-print("Ваш індекс маси тіла", round(bmi, 1))
+
+b = print("Ваш індекс маси тіла", round(bmi, 1))
+
+if bmi < 18.5:
+    print("Дефіцит маси тіла")
+elif bmi >= 18.5 and bmi < 25:
+    print("Норма")
+elif bmi >= 25 and bmi < 30:
+    print("Надмірна маса тіла")
+elif bmi >= 30 and bmi < 35:
+    print("Ожиріння І ступеню")
+elif bmi >= 35 and bmi < 40:
+    print("Ожиріння ІІ ступеню ступеню")
+else:
+    print("Ожиріння ІІІ ступеню")
+    
+

@@ -13,3 +13,12 @@
 # Сума знижки: 100 грн.
 # Ціна товару зі знижкою: 400 грн.
 # ```
+
+original_price = float(input("Введіть ціну товару без знижки: "))
+discount_percentage = float(input("Введіть розмір знижки (у %): "))
+
+discount_amount = (discount_percentage / 100) * original_price
+final_price = original_price - discount_amount
+
+print(f"Сума знижки: {discount_amount} грн.")
+print(f"Ціна товару зі знижкою: {final_price} грн.")

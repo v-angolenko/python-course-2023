@@ -19,3 +19,11 @@
 # Введіть кількість років вкладу: 10
 # Сума вашого прибутку за вкладом становитиме: 6288.95 UAH
 # ```
+
+# start of task
+depositAmount = int(input("Введіть суму первісного вкладу: "))
+depositInterest = int(input("Введіть річну відсоткову ставку: "))
+depositTerm = int(input("Введіть кількість років вкладу: "))
+depositProfit = depositAmount * ((1 + (depositInterest / 100)) ** depositTerm) - depositAmount
+print(f"Сума вашого прибутку за вкладом становитиме: {round(depositProfit, 2)} UAH")
+# end of task

@@ -15,3 +15,12 @@
 # ```
 # [23, 56, 78]
 # ```
+
+# start of task
+numbersList = []
+numbersList.append(int(input("Введіть число:\n> ")))
+numbersList.append(int(input("Введіть число:\n> ")))
+numbersList.append(int(input("Введіть число:\n> ")))
+numbersList.sort()
+print(numbersList)
+# end of task

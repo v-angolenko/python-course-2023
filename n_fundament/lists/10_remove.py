@@ -12,3 +12,9 @@
 # ```
 # ['Git', 'Docker', 'Kubernetes', 'Ansible']
 # ```
+
+# start of task
+softwareTools = ['Git', 'Docker', 'Jenkins', 'Kubernetes', 'Ansible'] # rip docker, xD
+softwareTools.remove('Jenkins') # ...
+print(softwareTools)
+# end of task

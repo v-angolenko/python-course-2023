@@ -13,3 +13,9 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+
+# start of task
+mobileBrands = ['Apple', 'Samsung', 'Xiaomi', 'Nokla', 'OnePlus']
+del mobileBrands[3]
+print(mobileBrands)
+# end of task

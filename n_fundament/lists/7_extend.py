@@ -13,3 +13,10 @@
 # ```
 # ['червоний', 'зелений', 'синій', 'помаранчевий', 'зелений', 'фіолетовий']
 # ```
+
+# start of task
+primaryColors = ['червоний', 'зелений', 'синій']
+secondaryColors = ['помаранчевий', 'зелений', 'фіолетовий']
+primaryColors.extend(secondaryColors)
+print(primaryColors)
+# end of task

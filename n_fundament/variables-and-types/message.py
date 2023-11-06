@@ -8,3 +8,8 @@
 # ```
 # Привіт, це моя перша програма!
 # ```
+
+# start of task
+message = "```\nПривіт, це моя перша програма!\n```"
+print(message)
+# end of task

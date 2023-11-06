@@ -12,3 +12,9 @@
 # ```
 # ['яблуко', 'полуниця', 'банан', 'киві']
 # ```
+
+# start of task
+favoriteFruits = ['яблуко', 'банан', 'киві']
+favoriteFruits.insert(1, 'полуниця') # добре із маком паляниця :D
+print(favoriteFruits)
+# end of task

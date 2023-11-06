@@ -17,3 +17,9 @@
 # Дмитро
 # ```
 # ```
+
+# start of task
+teamMembers = ["Андрій", "Олена", "Сергій", "Ірина", "Дмитро"]
+for member in teamMembers:
+	print(member)
+# end of task

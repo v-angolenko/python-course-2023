@@ -12,3 +12,9 @@
 # фіолетовий
 # жовтий
 # ```
+
+# start of task
+colors = ['червоний', 'зелений', 'синій', 'жовтий', 'фіолетовий']
+print(colors[-1])
+print(colors[-2])
+# end of task

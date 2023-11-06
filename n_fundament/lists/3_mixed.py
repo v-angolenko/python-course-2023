@@ -16,3 +16,9 @@
 # 3.14
 # True
 # ```
+
+# start of task
+mixedData = [42, "Python", 3.14, True]
+for data in mixedData:
+	print(data)
+# end of task

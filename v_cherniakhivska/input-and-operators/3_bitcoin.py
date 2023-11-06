@@ -14,3 +14,11 @@
 # Введіть поточний курс криптовалюти (USD за 1 криптовалюту): 150
 # Прибуток від інвестицій: 500 USD.
 # ```
+
+investment_amount = float(input("Введіть суму інвестицій у криптовалюту (USD): "))
+purchase_price = float(input("Введіть курс купівлі криптовалюти (USD за 1 криптовалюту): "))
+current_price = float(input("Введіть поточний курс криптовалюти (USD за 1 криптовалюту): "))
+
+profit = (current_price - purchase_price) * investment_amount
+
+print(f"Прибуток від інвестицій: {profit:.2f} USD.")

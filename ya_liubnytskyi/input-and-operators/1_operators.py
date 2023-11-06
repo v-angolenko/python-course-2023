@@ -15,3 +15,12 @@
 # 5 - 3 = 2
 # 5 * 3 = 15
 # 5 / 3 = 1.6666666666666667
+a = int(input("Введіть значення "))
+b = int(input("Введіть значення "))
+multitext = f'''
+a + b = {a+b}
+a - b = {a-b}
+a * b = {a*b}
+a / b = {a/b}
+'''
+print(multitext)

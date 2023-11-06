@@ -13,3 +13,12 @@
 
 # Час необхідний для проходження відстані: 4 години та 0 хвилин.
 # ```
+
+distance = float(input("Введіть кількість кілометрів для походу: "))
+speed = float(input("Введіть вашу середню швидкість (км/год): "))
+
+time_in_hours = distance / speed
+hours = int(time_in_hours)
+minutes = int((time_in_hours - hours) * 60)
+
+print(f"Час необхідний для проходження відстані: {hours} годин та {minutes} хвилин.")

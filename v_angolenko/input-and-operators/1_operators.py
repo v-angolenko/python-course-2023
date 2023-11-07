@@ -15,3 +15,16 @@
 # 5 - 3 = 2
 # 5 * 3 = 15
 # 5 / 3 = 1.6666666666666667
+
+num1 = int(input('Введіть перше число: '))
+num2 = int(input('Введіть друге число: '))
+
+sum = num1 + num2
+diff = num1 - num2
+product = num1 * num2
+division = num1 / num2
+
+print(f'{num1} + {num2} = {sum}')
+print(f'{num1} - {num2} = {diff}')
+print(f'{num1} * {num2} = {product}')
+print(f'{num1} / {num2} = {division}')

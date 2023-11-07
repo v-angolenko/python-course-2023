@@ -21,3 +21,13 @@
 # місячний дохід та чи є він постійним клієнтом банку,
 # обробляє ці дані за допомогою операторів `and` та `or`
 # і виводить повідомлення про можливість отримання кредиту.
+
+hasGoodCreditHistory = bool(input("У вас хороша кредитна історія? "))
+monthlyIncome = int(input("Який у вас місячний дохід? "))
+isLongTermClient = bool(input("Ви постійни клієнт? "))
+
+if hasGoodCreditHistory == True and monthlyIncome > 20000 or isLongTermClient == True and monthlyIncome > 15000:
+    print("Ви маєте право на кредит")
+else:
+    print("Ви не маєте права на кредит")    
+

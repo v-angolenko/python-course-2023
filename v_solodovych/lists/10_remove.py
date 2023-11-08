@@ -6,6 +6,11 @@
 # Ваше завдання - видалити 'Jenkins' з цього списку. Використайте метод `remove()`
 # для виконання цієї задачі. Після видалення елементу, виведіть оновлений список `softwareTools` на екран.
 
+softwareTools = ['Git', 'Docker', 'Jenkins', 'Kubernetes', 'Ansible']
+softwareTools.remove("Jenkins")
+
+print(softwareTools)
+
 # Очікуваний результат: Коли ви виконаєте скрипт, у консолі має бути виведений список `softwareTools`
 # без елемента 'Jenkins':
 # ```

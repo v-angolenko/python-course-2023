@@ -15,3 +15,9 @@
 # ```
 # [23, 56, 78]
 # ```
+a = float(input("Введіть значення "))
+b = float(input("Введіть значення "))
+c = float(input("Введіть значення "))
+numberList = [a,b,c]
+numberList.sort()
+print(numberList)

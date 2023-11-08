@@ -11,3 +11,10 @@
 
 # Очікуваний результат: На початку програма виводить зворотньо відсортований список `[5, 4, 3, 2, 1]`.
 # Після введення користувачем числа, наприклад 6, оновлений список повинен виглядати так: `[5, 4, 3, 2, 1, 6]`.
+originalList = [1,2,3,4,5]
+copiedList = originalList.copy()
+copiedList.reverse()
+print(copiedList)
+user_number = int(input("Введіть значення "))
+copiedList.append(user_number)
+print(copiedList)

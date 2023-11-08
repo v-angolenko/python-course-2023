@@ -9,3 +9,11 @@
 # Очікуваний результат: Програма повинна вивести два рядки.
 # Перший: "Загальна кількість днів з замовленнями: 7".
 # ```
+
+
+orders = [12, 15, 7, 11, 14, 18, 9]
+days_with_orders = 0
+for orders_count  in  orders:
+    if  orders_count > 0:
+        days_with_orders += 1
+print((f'Загальна кількість днів з замовленями: {days_with_orders}'))

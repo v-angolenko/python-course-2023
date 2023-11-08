@@ -12,3 +12,9 @@
 # фіолетовий
 # жовтий
 # ```
+
+colors = ['червоний', 'зелений', 'синій', 'жовтий', 'фіолетовий']
+last_color = colors[-1]
+print('Останній елемент списку: ', last_color)
+second_last_color = colors [-2]
+print('Передостаннійелемент списку: ', second_last_color)

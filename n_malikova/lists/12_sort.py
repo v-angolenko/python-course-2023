@@ -15,3 +15,14 @@
 # ```
 # [23, 56, 78]
 # ```
+numbersList = []
+
+num1 = float(print('Введіть перше число: '))
+num2 = float(print('Введіть друге число: '))
+num3 = float(print('Введіть третє число: '))
+
+numbersList.append(num1)
+numbersList.append(num2)
+numbersList.append(num3)
+numbersList.sort()
+print('Відсортований список чисел:', numbersList)

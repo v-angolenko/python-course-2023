@@ -23,3 +23,21 @@
 # 3. Приготувати обід
 # 4. Прочитати книгу
 # ```
+
+tasks = []
+tasks.append("Зробити домашнє завдання")
+tasks.append("Піти в магазин")
+tasks.append("Подзвонити другу")
+tasks.append("Приготувати обід")
+tasks.append("Прочитати книгу")
+
+for task in tasks:
+    print(str(tasks.index(task)+1)+": "+ task)
+
+taskindex = int(input("Яке завдання ви виконали? Введіть номер: "))
+tasks.pop(taskindex-1)
+
+index = 1
+for task in tasks:
+    print(str(index)+": "+ task)
+    index+= 1

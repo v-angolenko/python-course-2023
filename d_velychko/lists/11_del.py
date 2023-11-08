@@ -13,3 +13,11 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+
+mobileBrands = ['Apple', 'Samsung', 'Xiaomi', 'Nokla', 'OnePlus']
+
+if 'Nokla' in mobileBrands:
+    index = mobileBrands.index('Nokla')
+    del mobileBrands[index]
+
+print(mobileBrands)

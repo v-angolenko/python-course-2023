@@ -13,3 +13,11 @@
 # ```
 # ['червоний', 'зелений', 'синій', 'помаранчевий', 'зелений', 'фіолетовий']
 # ```
+
+primaryColors = ['червоний', 'зелений', 'синій']
+
+secondaryColors = ['помаранчевий', 'зелений', 'фіолетовий']
+Colors = primaryColors
+Colors.extend(secondaryColors)
+print(primaryColors)
+print(Colors)

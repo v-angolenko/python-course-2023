@@ -13,3 +13,7 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+
+items = ['Apple', 'Samsung', 'Xiaomi', 'Nokla', 'OnePlus']
+del (items[3])
+print(items)

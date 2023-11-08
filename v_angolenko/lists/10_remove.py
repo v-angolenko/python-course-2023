@@ -12,3 +12,7 @@
 # ```
 # ['Git', 'Docker', 'Kubernetes', 'Ansible']
 # ```
+
+tools = ['Git', 'Docker', 'Jenkins', 'Kubernetes', 'Ansible']
+tools.remove('Jenkins')
+print(tools)

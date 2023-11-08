@@ -16,3 +16,16 @@
 # 3.14
 # True
 # ```
+
+mixed = [
+    42,
+    'Python',
+    3.14,
+    True
+]
+
+
+print(mixed[0])
+print(mixed[1])
+print(mixed[2])
+print(mixed[3])

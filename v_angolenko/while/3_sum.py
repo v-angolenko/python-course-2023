@@ -29,20 +29,3 @@
 # while True:
 #   ...
 #   break;
-
-
-total_sum = 0
-while True:
-    user_input = input('Введіть число: ')
-    if user_input == 'stop':
-        break
-
-    if not user_input.isdigit():
-        print('Потрібно ввести число')
-        continue
-
-    num = float(user_input)
-    total_sum = total_sum + num
-
-
-print('Сума всіх чисел = ', total_sum)

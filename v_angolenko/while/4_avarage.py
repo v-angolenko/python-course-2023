@@ -30,24 +30,3 @@
 # while True:
 #   ...
 #   break;
-
-
-sum_of_numbers = 0
-count_of_numbers = 0
-
-
-while True:
-    user_input = input('Введіть число або "0" для завершення:')
-    if user_input == '0':
-        break
-
-    if not user_input.isdigit():
-        print('Потрібно ввести число')
-        continue
-
-    num = float(user_input)
-    sum_of_numbers = sum_of_numbers + num
-    count_of_numbers = count_of_numbers + 1
-
-
-print('Середнє значення введених чисел:', sum_of_numbers / count_of_numbers)

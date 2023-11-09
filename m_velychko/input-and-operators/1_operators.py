@@ -16,15 +16,15 @@
 # 5 * 3 = 15
 # 5 / 3 = 1.6666666666666667
 
-число1 = int(input (' Введіть перше число '))
-число2 = int(input (' Введіть друге число '))
+Num1 = int(input (' Введіть перше число '))
+Num2 = int(input (' Введіть друге число '))
 
-Множення = число1 * число2
-Ділення = число1 / число2
-Додавання = число1 + число2
-Віднімання = число1 - число2
+Multiplication = Num1 * Num2
+Division = Num1 / Num2
+appending = Num1 + Num2
+Subtraction = Num1 - Num2
 
-print(f"{число1} * {число2} = {Множення}")
-print(f"{число1} / {число2} = {Ділення}")
-print(f"{число1} + {число2} = {Додавання}")
-print(f"{число1} - {число2} = {Віднімання}")
+print(f"{Num1} * {Num2} = {Multiplication}")
+print(f"{Num1} / {Num2} = {Division}")
+print(f"{Num1} + {Num2} = {appending}")
+print(f"{Num1} - {Num2} = {Subtraction}")

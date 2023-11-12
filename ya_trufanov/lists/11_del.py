@@ -13,3 +13,14 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+
+# Створюємо список з марками телефонів
+mobileBrands = ["Apple", "Samsung", "Xiaomi", "Nokla", "OnePlus"]
+
+# Визначаємо індекс елемента 'Nokla'
+
+# Видаляємо елемент за індексом
+del mobileBrands[3]
+
+# Виводимо оновлений список
+print(mobileBrands)

@@ -26,3 +26,16 @@
 # перевіряючи, чи залишок від ділення current_number на 2 дорівнює нулю. (оператор %)
 # 5. Якщо current_number є парним, виведіть його на екран.
 # 6. Збільште current_number на одиницю перед кожною наступною ітерацією циклу.
+
+max_number = int(input("Введіть значення "))
+current_number = 1 
+
+while current_number <= max_number:
+  if current_number % 2 == 0:
+    print(current_number)
+  current_number += 1 
+
+    
+
+
+

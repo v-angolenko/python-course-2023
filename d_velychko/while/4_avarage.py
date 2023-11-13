@@ -30,3 +30,23 @@
 # while True:
 #   ...
 #   break;
+
+sum_of_numbers = 0
+
+count_of_numbers = 0
+
+while True:
+    user_input = input("Введіть число або '0' для завершення: ")
+    if user_input == '0' :
+        if count_of_numbers == 0:
+         print("Не введено жодного числа")
+    else:
+        averang = sum_of_numbers / count_of_numbers
+        print(f"Середнє значення введених чисел: {averang}")
+    break
+try:
+    number = float(user_input)
+    sum_of_numbers += number
+    count_of_numbers += 1
+except ValueError:
+    print("Ведення некоректне число. Будь ласка, введіть числа або '0'.")   

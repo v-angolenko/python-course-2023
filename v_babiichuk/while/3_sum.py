@@ -29,3 +29,24 @@
 # while True:
 #   ...
 #   break;
+
+# Start ініціалізація
+total_sum = 0
+user_input = ""
+while True:
+    # Отримання введення від користувача
+    user_input = input("Введіть число або 'stop' для завершення: ")
+    # Перевірка на виход з циклу
+    if user_input.lower() == "stop":
+        break
+    # Перевірка, чи введене значення є числом
+    if user_input.isdigit() or (user_input[0] == '-' and user_input[1:].isdigit()):
+        # Додавання числа до суми
+        total_sum += float(user_input)
+        # Виведення повідомлення
+        print("Число прийнято")
+    else:
+        # Виведення повідомлення про некоректне введення
+        print("Введено некоректне число. Спробуйте ще раз.")
+# Виведення суми введених чисел
+print(f"Сума введених чисел: {total_sum}")

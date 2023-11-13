@@ -30,3 +30,29 @@
 # while True:
 #   ...
 #   break;
+
+#Ініціалізація змінних
+sum_of_numbers = 0
+count_of_numbers = 0
+
+# Цикл введення чисел
+while True:
+    # Отримання введеного числа від користувача
+    user_input = input("Введіть число або '0' для завершення: ")
+
+    # Перевірка, чи введено "0"
+    if user_input == '0':
+        # Обчислення та виведення середнього значення
+        if count_of_numbers > 0:
+            average = sum_of_numbers / count_of_numbers
+            print(f"Середнє значення введених чисел: {average}")
+        else:
+            print("Не введено жодного числа, неможливо обчислити середнє.")
+        
+        # Завершення програми
+        break
+    else:
+        # Додавання числа до суми та збільшення лічильника
+        number = float(user_input)
+        sum_of_numbers += number
+        count_of_numbers += 1

@@ -30,3 +30,17 @@
 # while True:
 #   ...
 #   break;
+
+sum_of_numbers = 0
+count_of_numbers = 0
+user_input = None
+
+while user_input != 0:
+    user_input = float(input("Введіть число або '0' для завершення:"))
+    if user_input != 0:
+        count_of_numbers += 1
+        sum_of_numbers += user_input
+    if user_input == 0:
+        break
+
+print(f"Середнє значення введених чисел: {sum_of_numbers / count_of_numbers}")

@@ -17,3 +17,14 @@
 
 # Виведення чисел у зворотньому порядку
 # for number in reversed(input_numbers):
+
+# start
+input_numbers = []
+for i in range(5):
+    number = int(input("Введіть число: "))
+    input_numbers.append(number)
+
+# Виведення чисел у зворотньому порядку
+print("Числа в зворотньому порядку:")
+for number in reversed(input_numbers):
+    print(number)

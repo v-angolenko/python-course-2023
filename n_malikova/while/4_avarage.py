@@ -32,11 +32,16 @@
 #   break;
 sum_of_numbers = 0
 count_of_numbers = 0
-while   True :
-    user_input  =    int(input("Введіть значення або '0' для завершення: "))
+while True:
+    user_input = int(input("Введіть значення або '0' для завершення: "))
     if user_input == 0:
         break
-   
+
+    number = float(user_input)
+    sum_of_numbers += number
+    count_of_numbers += 1
+
+
 if count_of_numbers > 0:
     average = sum_of_numbers / count_of_numbers
     print(f"Середне арефметичне виведених чисел: {average}")

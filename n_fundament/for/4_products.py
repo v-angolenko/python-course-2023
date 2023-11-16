@@ -19,12 +19,12 @@
 # start of task
 shopping_list = []
 while True:
-    product = input("Введіть назву продукту: ")
-    if product == "готово":
-        break
-    shopping_list.append(product)
+  product = input("Введіть назву продукту: ")
+  if product == "готово":
+    break
+  shopping_list.append(product)
 
 print("Список покупок:")
 for product in shopping_list:
-  print(shopping_list)
+  print(f"{product} ✅")
 # end of task

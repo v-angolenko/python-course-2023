@@ -22,7 +22,7 @@
 # start of task
 positive_count = 0
 while True:
-  number = int(input())
+  number = int(input("Введіть число: "))
   if number < 0:
     break
   positive_count += 1  

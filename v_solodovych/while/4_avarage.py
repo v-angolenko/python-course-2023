@@ -26,6 +26,18 @@
 # поділивши суму на кількість введених чисел (не враховуючи нуль).
 # 7. Виведіть результат і завершіть програму.
 
+sum_of_numbers = 0
+count_of_numbers = 0
+
+while True:
+    user_input = int(input('Введіть число або "0" для завершення: '))
+    if user_input != 0:
+        sum_of_numbers += user_input
+        count_of_numbers += 1
+    else:
+        print("Середнє значення введених чисел:", sum_of_numbers / count_of_numbers)
+        break
+
 # Можна використати
 # while True:
 #   ...

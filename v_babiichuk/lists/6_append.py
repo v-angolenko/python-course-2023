@@ -10,3 +10,8 @@
 # ```
 # ['смартфон', 'ноутбук', 'планшет', 'смарт-годинник']
 # ```
+gadgets = ['Iphone','Macbook']
+gadgets.append('Ipad')
+gadgets.append('Watch')
+print(gadgets)
+#English creativ

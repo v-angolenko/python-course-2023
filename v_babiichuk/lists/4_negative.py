@@ -12,3 +12,6 @@
 # фіолетовий
 # жовтий
 # ```
+colors = ['Red','Green','Blue','Yellow','Purple']
+print(colors[-1])
+print(colors[-2])

@@ -13,3 +13,6 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+mobileBrands = ['Apple','Samsung','Xiaomi','Nokia','OnePlus']
+del mobileBrands[3]
+print(mobileBrands)

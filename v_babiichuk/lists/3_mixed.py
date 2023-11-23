@@ -16,3 +16,8 @@
 # 3.14
 # True
 # ```
+mixedData = ['42','Python','3,14','True']
+print(mixedData[0])
+print(mixedData[1])
+print(mixedData[2])
+print(mixedData[3])

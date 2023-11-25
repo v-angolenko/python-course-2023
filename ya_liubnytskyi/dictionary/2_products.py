@@ -26,3 +26,27 @@
 #     ___ += int(quantity_change) # int('-3') => -3
 # else:
 #     print(f"Продукт {product_name} не знайдено.")
+
+product_stock = {"apples": 20, "bananas": 15}
+product_list = list(product_stock)
+print(f"In storage {product_stock['apples']} {product_list[0]}, {product_stock['bananas']} {product_list[1]}")
+
+while True:
+ user_input = input("Enter your value ").lower()
+
+ if user_input == "end":
+   break
+
+ product_name, quantity_change = user_input.split() 
+
+
+ if product_name in product_stock:
+    
+    product_stock[product_name] += int(quantity_change)
+ 
+ else:
+    print(f"Product {product_name} not found.")
+
+print(f"In storage {product_stock['apples']} {product_list[0]}, {product_stock['bananas']} {product_list[1]}")
+
+

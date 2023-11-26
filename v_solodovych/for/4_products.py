@@ -15,3 +15,16 @@
 # 2. У безкінечному циклі (while), використовуючи `input()`, зчитувати від користувача назви продуктів.
 # 3. Якщо користувач вводить "готово", завершити цикл.
 # 4. Вивести весь список покупок (через for).
+
+shopping_list = []
+
+while True:
+    goods = input("Введіть назву продукта: ")
+
+    if str.lower(goods) == 'готово':
+        break
+    else:
+        shopping_list.append(goods)
+
+for i in shopping_list:
+    print(i)

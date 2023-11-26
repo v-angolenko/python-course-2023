@@ -14,6 +14,13 @@
 # одати його до списку `input_numbers`.
 # 4. Після завершення циклу, використай цикл `for` для виведення чисел у зворотньому порядку.
 
+input_numbers = []
+
+for i in range(5):
+    input_numbers.append(int(input("Введіть число: ")))
+
+for j in reversed(input_numbers):
+    print(j)
 
 # Виведення чисел у зворотньому порядку
 # for number in reversed(input_numbers):

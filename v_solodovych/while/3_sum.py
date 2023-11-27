@@ -25,6 +25,22 @@
 # 6. Виведіть повідомлення "Число прийнято" після кожного успішного введення числа.
 # 7. Коли цикл завершиться, виведіть загальну суму введених чисел.
 
+from getpass import getpass
+
+total_sum = 0
+user_input = None
+
+while True:
+    user_input = getpass("")
+    if int(user_input.isdigit()):
+        print("\033[1A","Число прийнято", sep = "")
+        total_sum += int(user_input)
+    elif user_input == "stop":
+        print("\033[1A", f"Сума введених чисел: {total_sum}", sep = "")
+        break
+    else:
+        print("\033[1A", "Невідомий ввід", sep = "")
+
 # Можна використати
 # while True:
 #   ...

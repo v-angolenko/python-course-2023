@@ -9,6 +9,17 @@
 # "Ім'я [введене ім'я] має індекс [індекс в списку] у списку namesList".
 # Якщо ж ім'я відсутнє у списку, виведіть "Ім'я [введене ім'я] у списку namesList відсутнє".
 
+namesList = ['Anna', 'Oleksiy', 'Viktor', 'Olga', 'Ivan']
+name = input("Введіть ім'я: ")
+if name in namesList:
+    index = namesList.index(name)
+    print(f"Ім'я {name} має індекс {index} у списку namesList")
+
+else:
+    
+    print(f"Ім'я {name} у списку namesList відсутнє")
+
+
 # Очікуваний результат: Якщо користувач введе ім'я 'Olga', то програма має вивести:
 # ```
 # ```

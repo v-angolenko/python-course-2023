@@ -7,6 +7,11 @@
 # Визначте індекс 'Nokla' в списку і видаліть цей елемент.
 # Після виконання операції виведіть на екран оновлений список `mobileBrands`.
 
+mobileBrands = ['Apple', 'Samsung', 'Xiaomi', 'Nokla', 'OnePlus']
+del mobileBrands[3]
+
+print(mobileBrands)
+
 # Очікуваний результат: Після запуску програми, в консолі має бути виведений оновлений список `mobileBrands`
 # без елемента 'Nokla':
 # ```

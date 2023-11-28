@@ -7,6 +7,13 @@
 # Використовуйте метод `extend()`, щоб додати усі елементи з `secondaryColors` до `primaryColors`.
 # Після цього виведіть оновлений список `primaryColors` на екран.
 
+primaryColors = ["червоний", "зелений", "синій"]
+secondaryColors = ["помаранчевий", "зелений", "фіолетовий"]
+
+primaryColors.extend(secondaryColors)
+
+print(primaryColors)
+
 # Очікуваний результат: Консоль повинна показати оновлений список `primaryColors`
 # з усіма елементами обох списків, як показано нижче:
 # ```

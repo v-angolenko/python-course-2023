@@ -29,3 +29,19 @@
 # while True:
 #   ...
 #   break;
+
+total_sum = 0 
+
+while True:
+  user_input = input("Введіть число ( або 'stop' для завершення): ")
+  if user_input.lower() == 'stop':
+   break
+  try:
+   number = float(user_input)
+   total_sum += number
+   print("Число прийнято")
+  except ValueError:
+   print("Введено некоректне число. Будь ласка, введіть число або 'stop'.")
+   
+print(f"Сума введених чисел: {total_sum}")
+

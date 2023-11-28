@@ -13,3 +13,7 @@
 # ```
 # [1, 2, 3]
 # ```
+
+numbers = list(range(0, 10))
+
+print(numbers[2:5])

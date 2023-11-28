@@ -23,3 +23,15 @@
 # 3. Приготувати обід
 # 4. Прочитати книгу
 # ```
+
+tasks = ["Зробити домашнє завдання", "Піти в магазин", "Подзвонити другу", "Приготувати обід", "Прочитати книгу"]
+
+for index in range(len(tasks)):
+    print("%s. %s" % (index + 1, tasks[index]))
+
+deleteIndex = input("Яке завдання ви виконали? Введіть номер:")
+
+deletedTask = tasks.pop(int(deleteIndex) - 1)
+
+for index in range(len(tasks)):
+    print("%s. %s" % (index + 1, tasks[index]))

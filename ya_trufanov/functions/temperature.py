@@ -21,3 +21,20 @@
 #    - Фаренгейт у Цельсій: ( (°F − 32) × 5/9 )
 # 4. Функція повинна повертати перетворене значення температури.
 # 5. Перевірте роботу функції на різних вхідних даних.
+
+
+def convert_temperature(temperature, unit):
+    temperature = float(temperature)
+    if unit == "C":
+        return (temperature * 9 / 5) + 32
+    elif unit == "F":
+        return (temperature - 32) * 5 / 9
+    else:
+        return "Некоректна одиниця виміру. Введіть 'C' або 'F'."
+
+
+temp_input = input("Введіть числове значення температури: ")
+unit_input = input("Введіть одиниця виміру - 'C' або 'F': ")
+
+result = convert_temperature(temp_input, unit_input)
+print(f"Результат конвертації: {result}")

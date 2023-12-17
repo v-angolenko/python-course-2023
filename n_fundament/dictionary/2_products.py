@@ -43,5 +43,5 @@ while True:
     change = int(change)
     if name not in product_stock:
         print(f"Такого продукту не існує: {name}")
-        continue
+        break
     product_stock[name] += change

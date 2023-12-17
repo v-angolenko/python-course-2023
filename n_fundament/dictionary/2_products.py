@@ -17,12 +17,31 @@
 # 4. Оновлюйте кількість продукту у словнику відповідно до введеної інформації.
 # 5. Після отримання "end" виведіть кінцевий стан запасів.
 
-# # Розділення введеного рядка на компоненти
-# product_name, quantity_change = user_input.split() // Повертає кореж ('apples', '-2')
+product_stock = {
+    "coffee": 10,
+    "tea": 7,
+    "water": 5,
+    "milk": 15,
+    "juice": 10,
+    "apples": 20,
+    "bananas": 15,
+    "oranges": 12,
+    "pears": 10,
+    "grapes": 15,
+}
 
-# # Перевірка, чи існує продукт у словнику
-# if product_name in product_stock:
-#     # Оновлення кількості продукту
-#     ___ += int(quantity_change) # int('-3') => -3
-# else:
-#     print(f"Продукт {product_name} не знайдено.")
+while True:
+    user_input = input(
+        'Введіть назву продукту та зміну кількості (Приклад "coffee -> +5"): '
+    )
+    if user_input == "end":
+        print("Кінцевий стан запасів:")
+        for name, amount in product_stock.items():
+            print(f"{name}: {amount}")
+        break
+    name, change = user_input.split(" -> ")
+    change = int(change)
+    if name not in product_stock:
+        print(f"Такого продукту не існує: {name}")
+        continue
+    product_stock[name] += change

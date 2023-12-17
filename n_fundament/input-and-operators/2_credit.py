@@ -19,3 +19,11 @@
 # Введіть термін кредиту в роках: 5
 # Ваш щомісячний платіж становитиме: 990 UAH
 # ```
+
+creditAmount = int(input("Введіть суму кредиту: "))
+creditInterest = int(input("Введіть процентну ставку по кредиту за рік: "))
+creditTerm = int(input("Введіть термін кредиту в роках: "))
+monthlyPayment = (
+    creditAmount + (creditAmount * (creditInterest / 100) * creditTerm)
+) / (creditTerm * 12)
+print(f"Ваш щомісячний платіж становитиме: {round(monthlyPayment, 2)} UAH")

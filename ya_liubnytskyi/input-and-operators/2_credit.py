@@ -20,3 +20,11 @@
 # Введіть термін кредитування у місяцях: 12
 # Ваш щомісячний платіж складатиме: 4387.86 UAH
 # ```
+credit = int(input("Введіть суму кредита "))
+percent = int(input("Введіть процентну ставку за рік (у %) ")) / 100
+term = int(input("Введіть термін кредитування у місяцях "))
+monthly_interest_rate = percent / 12
+monthly_payment = (credit * monthly_interest_rate) / (1 - (1 + monthly_interest_rate) ** (-term))
+print(f"Ваш щомісячний платіж складатиме: {monthly_payment.__round__(2)}")
+
+

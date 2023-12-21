@@ -26,3 +26,39 @@
 #     ___ += int(quantity_change) # int('-3') => -3
 # else:
 #     print(f"Продукт {product_name} не знайдено.")
+
+product_stock = {"apples": 20, "bananas": 15}
+
+while True:
+
+    user_input = input("Введіть продукт та кількість (+/-): ")
+
+    if user_input.lower() == "end":
+
+        break
+
+    try:
+
+        product_name, quantity_change = user_input.split()
+
+        quantity_change = int(quantity_change)
+
+    except ValueError:
+
+        print("Невірний формат вводу. Використовуйте 'назва +/− кількість'.")
+
+        continue
+
+    if product_name in product_stock:
+
+        product_stock[product_name] += quantity_change
+
+        print(f"Оновлено: {product_name}: {product_stock[product_name]}")
+
+    else:
+        
+        print(f"Продукт {product_name} не знайдено.")
+
+print(f"Кінцевий стан запасів: {product_stock}")
+
+

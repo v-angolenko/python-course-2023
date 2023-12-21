@@ -18,3 +18,26 @@
 # 3. Використовуйте цикл для читання вводу від користувача.
 # 4. Якщо введено назву страви, яка є в словнику, додайте її вартість до загальної суми.
 # 5. Якщо введено "end", виведіть загальну вартість замовлення.
+
+menu_prices = {"coffee": 10, "tea": 7, "water": 5}
+
+total_order_cost = 0
+
+while True:
+    order_item = input("Введіть назву напою (або 'end' для завершення замовлення): ")
+
+    if order_item.lower() == "end":
+
+        print(f"Загальна сума замовлення: {total_order_cost}")
+
+        break
+
+    if order_item in menu_prices:
+
+        total_order_cost += menu_prices[order_item]
+
+        print(f"Додано {order_item}. Поточна загальна сума: {total_order_cost}")
+
+    else:
+        
+        print("Невірна назва напою. Спробуйте ще раз.")

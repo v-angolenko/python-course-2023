@@ -15,3 +15,14 @@
 # 5 - 3 = 2
 # 5 * 3 = 15
 # 5 / 3 = 1.6666666666666667
+
+# Запитання у користувача для введення двох чисел
+first_number = float(input("Введіть перше число: "))
+second_number = float(input("Введіть друге число: "))
+
+# Виконання арифметичних операцій та виведення результатів
+print(f"Результати:")
+print(f"{first_number} + {second_number} = {first_number + second_number}")
+print(f"{first_number} - {second_number} = {first_number - second_number}")
+print(f"{first_number} * {second_number} = {first_number * second_number}")
+print(f"{first_number} / {second_number} = {first_number / second_number}")

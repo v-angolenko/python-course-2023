@@ -16,3 +16,18 @@
 # Сума ПДВ: 30.00 грн.
 # Загальна сума до сплати: 180.00 грн.
 # ```
+
+
+price_per_unit = float(input("Введіть ціну за одиницю товару: "))
+quantity = int(input("Введіть кількість товарів: "))
+tax_percentage = float(input("Введіть відсоток ПДВ: "))
+
+
+subtotal = price_per_unit * quantity
+tax_amount = (subtotal * tax_percentage) / 100
+total_amount = subtotal + tax_amount
+
+
+print(f"Сума до сплати без ПДВ: {subtotal:.2f} грн.")
+print(f"Сума ПДВ: {tax_amount:.2f} грн.")
+print(f"Загальна сума до сплати: {total_amount:.2f} грн.")

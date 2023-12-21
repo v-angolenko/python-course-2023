@@ -16,6 +16,40 @@
 #
 # Дані про кредитну історію, місячний дохід та статус постійного клієнта повинні зчитуватися через `input`.
 
+while True:
+    getCreditHistory = input("\nЧи маєте ви хорошу кредитну історію (так або ні)?\n")
+    if getCreditHistory.lower() == "так":
+        hasGoodCreditHistory = True
+        break
+    elif getCreditHistory.lower() == "ні":
+        hasGoodCreditHistory = False
+        break
+    else:
+        print("Введене значення невірне!")
+
+while True:
+    try:
+        monthlyIncome = float(input("\nВведіть місячний дохід:\n"))
+        break
+    except ValueError:
+        None
+
+while True:
+    getLongTerm = input("\nЧи є ви постійним клієнтом банку? (так або ні)?\n")
+    if getLongTerm.lower() == "так":
+        isLongTermClient = True
+        break
+    elif getLongTerm.lower() == "ні":
+        isLongTermClient = False
+        break
+    else:
+        print("Введене значення невірне!")
+
+if hasGoodCreditHistory == True and monthlyIncome > 20000 or isLongTermClient == True and monthlyIncome > 15000:
+    print("\nВи маєте право на кредит\n")
+else:
+    print("\nВи не маєте права на кредит\n")
+
 # Очікуваний результат:
 # Програма запитує у користувача дані про кредитну історію,
 # місячний дохід та чи є він постійним клієнтом банку,

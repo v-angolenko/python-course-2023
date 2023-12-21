@@ -8,6 +8,29 @@
 # який запитує у користувача, чи є він членом клубу (ввести "так" або "ні")
 # і вартість його покупки, а потім виводить "Ви отримали знижку!" або "Знижка не надається".
 
+while True:
+    clubValueGet = input("\nЧи є ви членом клубу (так або ні)?\n")
+    if clubValueGet.lower() == "так":
+        isClubMember = True
+        break
+    elif clubValueGet.lower() == "ні":
+        isClubMember = False
+        break
+    else:
+        print("Введене значення невірне!")
+
+while True:
+    try:
+        purchaseAmount = float(input("\nВведіть суму покупки:\n"))
+        break
+    except ValueError:
+        None
+
+if isClubMember == True or purchaseAmount > 1000:
+    print("\nВи отримали знижку!\n")
+else:
+    print("\nЗнижка не надається\n")
+
 # Очікуваний результат:
 # Користувач вводить свій статус члена клубу та суму покупки.
 # На основі введеної інформації програма визначає, чи отримає клієнт знижку.

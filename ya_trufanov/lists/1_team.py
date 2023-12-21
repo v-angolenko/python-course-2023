@@ -17,3 +17,8 @@
 # Дмитро
 # ```
 # ```
+
+teamMembers = ["Андрій", "Олена", "Сергій", "Ірина", "Дмитро"]
+
+for item in teamMembers:
+    print(item)

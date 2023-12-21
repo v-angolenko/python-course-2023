@@ -16,3 +16,8 @@
 # 3.14
 # True
 # ```
+
+mixedData = [42, "Python", 3.14, True]
+
+for item in mixedData:
+    print(item)

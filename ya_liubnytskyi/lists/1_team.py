@@ -17,3 +17,16 @@
 # Дмитро
 # ```
 # ```
+teamMembers = ["Андрій","Олена","Сергій","Ірина","Дмитро"]
+message = f'''
+{teamMembers[0]}
+{teamMembers[1]}
+{teamMembers[2]}
+{teamMembers[3]}
+{teamMembers[4]}
+'''
+print(message)
+
+
+
+

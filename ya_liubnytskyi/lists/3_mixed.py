@@ -16,3 +16,11 @@
 # 3.14
 # True
 # ```
+mixedData = [42, 'Python', 3.14, True]
+message = f'''
+{mixedData[0]}
+{mixedData[1]}
+{mixedData[2]}
+{mixedData[3]}
+'''
+print(message)

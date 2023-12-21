@@ -22,3 +22,38 @@
 # 5. Викликайте `password_strength` з введеним паролем.
 # 6. Виведіть результат оцінки пароля.
 # 7. Переконайтеся, що функція коректно обробляє різні вхідні дані.
+
+
+def password_strength(password):
+    
+    if len(password) < 8:
+        return "Слабкий"
+    
+    lower = any(char.islower() for char in password)
+    digit = any(char.isdigit() for char in password)
+    upper = any(char.isupper() for char in password)
+    
+    if lower and upper and digit:
+        return "Сильний"
+    elif (lower and digit) or (upper and digit):
+        return "Середній"
+    else:
+        return "Слабкий"
+    
+    
+user_password = input("Введіть пароль: ")
+strength = password_strength(user_password)
+print(f"Пароль: {strength}")
+
+
+
+    
+
+
+
+
+
+
+
+
+        

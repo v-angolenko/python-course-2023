@@ -17,3 +17,40 @@
 # 2. Визначте функцію `display_users` для виводу інформації про зареєстрованих користувачів.
 # 3. Організуйте головний цикл, який читає команди від користувача ('register', 'display', 'exit').
 # 4. Використовуйте умовні оператори для визначення дій, які потрібно виконати в залежності від введеної команди.
+
+
+user_registry = {}
+
+
+def register_user():
+    user_name = input("Введіть ім'я: ")
+    user_email = input("Введіть email: ")
+    user_registry[user_email] = user_name
+    return user_registry
+
+
+def display_users(): 
+    if not user_registry:
+        print("Реєстр користувачів порожній.")
+    else:
+        print("Реєстр користувачів:")
+        for email,name in user_registry.items():
+            print(f"Email: {email}, Ім'я :{name}")
+            
+            
+    
+  
+  
+while True:
+ user_input = input("Введіть команду (register, display, exit): ")
+ if user_input == "register":
+    register_user()
+
+ elif user_input == "display":
+      display_users()   
+      
+ elif user_input == "exit":
+     break
+ 
+ else:
+     print("Доступні команди: register, display, exit.: ")

@@ -16,3 +16,7 @@
 # 3.14
 # True
 # ```
+
+mixedData = [1, "рядок", 1.1, True]
+for item in range(0, len(mixedData)):
+    print(mixedData[item])

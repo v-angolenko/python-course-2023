@@ -13,3 +13,7 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+
+mobileBrands = ['Apple', 'Samsung', 'Xiaomi', 'Nokla', 'OnePlus']
+del mobileBrands[mobileBrands.index('Nokla')]
+print(mobileBrands)

@@ -10,6 +10,29 @@
 # Очікуваний результат: Якщо у `product_stock` є продукти {"apples": 20, "bananas": 15},
 # і користувач вводить "apples +5", "bananas -2", "end", програма виводить: {'apples': 25, 'bananas': 13}.
 
+product_stock = {"apples": 20, "bananas": 15}
+
+while True:
+    user_input = input("Введіть назву продукту та кількість, яку треба додати або відняти: ")
+    
+    try:
+        product_name, quantity_change = user_input.split()
+        
+        if product_name in product_stock:
+            product_stock[product_name] += int(quantity_change)
+        else:
+            print(f"Продукт {product_name} не знайдено.")
+
+    except(ValueError):
+        if user_input == 'end':
+            print(product_stock)
+            break
+        else:
+            print("Помилка введення!")
+
+
+
+
 # Послідовність виконання:
 # 1. Створіть словник `product_stock` з назвами продуктів та їхньою кількістю.
 # 2. Використовуйте цикл для читання вводу від користувача.

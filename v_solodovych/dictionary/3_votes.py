@@ -14,6 +14,18 @@
 # 'Вибачте, кандидата Dave немає в списку.'
 # {'Alice': 2, 'Bob': 1, 'Charlie': 0}
 
+candidate_votes = {"Alice": 0, "Bob": 0, "Charlie": 0}
+
+while True:
+    user_input = input("Введіть ім'я кандидата: ")
+
+    if user_input in candidate_votes:
+        candidate_votes[user_input] += 1
+    elif user_input == 'end':
+        print(candidate_votes)
+    else:
+        print(f"Вибачте, кандидата {user_input} немає в списку.")
+
 # Послідовність виконання:
 # 1. Створіть словник `candidate_votes` з іменами кандидатів та їхніми початковими голосами.
 # 2. Використовуйте цикл для читання вводу від користувача.

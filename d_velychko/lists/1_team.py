@@ -17,3 +17,11 @@
 # Дмитро
 # ```
 # ```
+
+teamMembers = ["Андрій", "Олена", "Сергій", "Ірина", "Дмитро"]
+
+print(teamMembers[0])
+print(teamMembers[1])
+print(teamMembers[2])
+print(teamMembers[3])
+print(teamMembers[4])

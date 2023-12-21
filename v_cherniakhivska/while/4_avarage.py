@@ -30,3 +30,17 @@
 # while True:
 #   ...
 #   break;
+
+sum_of_numbers = 0
+count_of_numbers = 0
+user_input=""
+while True:
+    user_input = input("Введіть число: ")
+    if user_input == "0":
+        break
+    else:
+        b = int(user_input)
+    if b > 0:
+        sum_of_numbers += b
+        count_of_numbers += 1
+print("Сума",sum_of_numbers,"Кількість",count_of_numbers)

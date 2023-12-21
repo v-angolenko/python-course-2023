@@ -21,3 +21,16 @@
 # 4. Якщо так, додайте один голос до відповідного кандидата.
 # 5. Якщо ні, виведіть повідомлення про помилку.
 # 6. Після отримання "end", виведіть кінцевий підрахунок голосів.
+
+candidate_votes = {"Alice": 0, "Bob": 0, "Charlie": 0}
+while True:
+    print("Доступні кандидати:", list(candidate_votes.keys()))
+    user_input = input("На кого ви хочете проголосувати?: ")
+    if user_input.lower() == "end":
+        print("Кінцевий підрахунок голосів:", candidate_votes)
+        break
+    if user_input in candidate_votes:
+        candidate_votes[user_input] += 1
+        print(f"Ваш голос за {user_input} зараховано.")
+    else:
+        print(f"Вибачте, кандидата {user_input} немає в списку.")

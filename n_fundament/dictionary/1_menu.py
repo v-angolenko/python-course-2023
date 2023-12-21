@@ -18,3 +18,30 @@
 # 3. Використовуйте цикл для читання вводу від користувача.
 # 4. Якщо введено назву страви, яка є в словнику, додайте її вартість до загальної суми.
 # 5. Якщо введено "end", виведіть загальну вартість замовлення.
+
+menu_prices = {
+    "coffee": 10,
+    "tea": 7,
+    "water": 5,
+    "milk": 15,
+    "juice": 10,
+}
+
+total_sum = 0
+
+message = "Введіть назву напою, або 'end' для завершення виконання програми: "
+messageIfNotInMenu = "Назва напою не існує в меню. Спробуйте ще раз: "
+
+input_value = input(message)
+
+while input_value != "end":
+    if input_value in menu_prices:
+        total_sum += menu_prices[input_value]
+        input_value = input(message)
+        continue
+    else:
+        input_value = input(messageIfNotInMenu)
+        continue
+
+if input_value == "end":
+    print(f"Загальна сума замовлення: {total_sum}")

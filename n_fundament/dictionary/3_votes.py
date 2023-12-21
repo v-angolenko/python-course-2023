@@ -21,3 +21,23 @@
 # 4. Якщо так, додайте один голос до відповідного кандидата.
 # 5. Якщо ні, виведіть повідомлення про помилку.
 # 6. Після отримання "end", виведіть кінцевий підрахунок голосів.
+
+candidate_votes = {"Alice": 0, "Bob": 0, "Charlie": 0}
+
+message = "Введіть ім'я кандидата та зміну кількості (Приклад 'Alice -> +1'): "
+
+input_data = input(message)
+
+while True:
+    if input_data == "end":
+        print("Кінцевий стан голосів:")
+        for name, amount in candidate_votes.items():
+            print(f"{name}: {amount}")
+        break
+    name, change = input_data.split(" -> ")
+    change = int(change)
+    if name not in candidate_votes:
+        print(f"Такого кандидата не існує: {name}")
+        break
+    candidate_votes[name] += change
+    input_data = input(message)

@@ -13,3 +13,7 @@
 # 2. Використовуючи цикл `for` і функцію `range`, пройтися по всіх числах від 1 до 10.
 # 3. У кожній ітерації циклу, виконати множення `multiplication_number` на поточне число з циклу.
 # 4. Вивести результат кожної ітерації у форматі "{multiplication_number} x {ітератор} = {результат}".
+
+multiplication_number = int(input("Введіть число: "))
+for i in range(1, 11):
+    print(f"{multiplication_number} x {i} = {multiplication_number * i}")

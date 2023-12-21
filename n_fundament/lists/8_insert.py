@@ -12,3 +12,7 @@
 # ```
 # ['яблуко', 'полуниця', 'банан', 'киві']
 # ```
+
+favoriteFruits = ["яблуко", "банан", "киві"]
+favoriteFruits.insert(1, "полуниця")
+print(favoriteFruits)

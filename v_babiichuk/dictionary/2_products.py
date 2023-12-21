@@ -26,3 +26,18 @@
 #     ___ += int(quantity_change) # int('-3') => -3
 # else:
 #     print(f"Продукт {product_name} не знайдено.")
+
+# Створення словника складу
+product_stock = {"apples": 20, "bananas": 15}
+while True:
+    user_input = input("Введіть назву продукту та кількість (+/-), або 'end' для завершення: ")
+    if user_input == "end":
+        break
+    product_name, quantity_change = user_input.split()
+    if product_name in product_stock:
+        product_stock[product_name] += int(quantity_change)
+    else:
+        print(f"Продукт {product_name} не знайдено.")
+
+# Вивод: запасів нема миші з'їли
+print("Кінцевий стан запасів:", product_stock)

@@ -17,3 +17,14 @@
 # Сума чаєвих: 75.00 грн
 # Загальна сума до оплати: 825.00 грн
 # ```
+
+amount_check = float(input("Введіть суму чеку: "))
+tip_percentage = float(input("Введіть відсоток чаєвих: "))
+
+tip_amount = amount_check * tip_percentage / 100
+total_amout = amount_check + tip_amount
+
+print(
+    f"Сума чаєвих: {tip_amount:.2f} грн\n"
+    + f"Загальна сума до оплати: {total_amout:.2f} грн"
+)

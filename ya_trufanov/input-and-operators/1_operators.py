@@ -15,3 +15,18 @@
 # 5 - 3 = 2
 # 5 * 3 = 15
 # 5 / 3 = 1.6666666666666667
+
+num1 = int(input("Введіть перше число: "))
+num2 = int(input("Введіть друге число: "))
+
+sumury = num1 + num2
+difference = num1 - num2
+multiplication = num1 * num2
+quotient = float(num1) / float(num2)
+
+print(
+    f"{num1} + {num2} = {sumury}\n"
+    + f"{num1} - {num2} = {difference}\n"
+    + f"{num1} * {num2} = {multiplication}\n"
+    + f"{num1} / {num2} = {quotient}"
+)

@@ -20,3 +20,13 @@
 # ```
 # Ім'я Petro у списку namesList відсутнє
 # ```
+
+namesList = ['Anna', 'Oleksiy', 'Viktor', 'Olga', 'Ivan']
+user_name = input('Введіть імя:')
+if  user_name   in  namesList:
+    index = namesList.index(user_name)
+    print(f'І`мя {user_name} має індекс {index} у списку namesList.' )  
+else:
+    print(f'Імя {user_name} у списку numesList відсутнє.')
+    
+                  

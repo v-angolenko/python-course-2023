@@ -13,3 +13,8 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+
+mobileBrands = ['Apple', 'Samsung', 'Xiaomi', 'Nokla', 'OnePlus']
+index_to_delete = mobileBrands.index('Nokla')
+del mobileBrands[index_to_delete]
+print(mobileBrands)

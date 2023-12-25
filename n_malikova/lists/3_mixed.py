@@ -16,3 +16,6 @@
 # 3.14
 # True
 # ```
+
+mixedData = [42, 'Computer', 37.44, False]
+print(mixedData)

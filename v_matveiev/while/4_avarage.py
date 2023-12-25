@@ -30,3 +30,20 @@
 # while True:
 #   ...
 #   break;
+sum_of_numbers = 0
+count_of_numbers = 0
+while True:
+    user_input = input("Введіть число або '0' для завершення: ")
+    if user_input == "0":
+        if count_of_numbers > 0:
+            average = sum_of_numbers / count_of_numbers
+            print(f"Середнє значення введених чисел: {average}")
+        else:
+            print("Не введено жодного позитивного числа.")
+        break
+    if float(user_input) > 0:
+        sum_of_numbers += float(user_input)
+        count_of_numbers += 1
+        print("Число прийнято")
+    else:
+        print("Введено непозитивне число. Спробуйте ще раз.")

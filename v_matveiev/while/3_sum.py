@@ -29,3 +29,12 @@
 # while True:
 #   ...
 #   break;
+total_sum = 0
+user_input = ""
+while True:
+    user_input = input("Введіть число або 'stop' для завершення: ")
+    if user_input.lower() == "stop":
+        break
+    total_sum += int(user_input)
+    print("Число прийнято")
+print("Сума введених чисел:", total_sum)

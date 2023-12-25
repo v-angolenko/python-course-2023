@@ -19,8 +19,9 @@
 # for number in reversed(input_numbers):
 
 input_numbers = []
-for _ in range(5):
+for i in range(5):
     number = int(input("Введіть число: "))
     input_numbers.append(number)
-for number in reversed(input_numbers):
-    print(number)
+#for number in reversed(input_numbers):
+#    print(number)
+print(sorted(input_numbers))

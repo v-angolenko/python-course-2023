@@ -21,3 +21,16 @@
 # 4. Якщо так, додайте один голос до відповідного кандидата.
 # 5. Якщо ні, виведіть повідомлення про помилку.
 # 6. Після отримання "end", виведіть кінцевий підрахунок голосів.
+
+candidate_votes = {'Alice': 2, 'Bob': 1, 'Charlie': 0}
+while   True:
+    candidate_name = input("Введіть ім'я кандидату (або 'end'для завершення):  ")
+    if candidate_name.lower() == 'end' :
+        break
+    if candidate_name in candidate_votes:
+     candidate_votes[candidate_name] += 1
+    else:
+        print("Вибачте, кондидат {candidate_name} немає в списку.")
+print(candidate_votes)
+                           
+                   

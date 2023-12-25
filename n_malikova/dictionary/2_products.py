@@ -26,3 +26,23 @@
 #     ___ += int(quantity_change) # int('-3') => -3
 # else:
 #     print(f"Продукт {product_name} не знайдено.")
+
+
+product_stock = {"apples": 20, "bananas": 15}
+while   True:
+    user_input = input ('Введіть назву продукту та зміну кількості (+/-), або "end" для завершення.' )
+    if user_input.lower() == 'end':
+        break
+    product, quantity_str = user_input.split()
+    quantity = int(quantity_str)
+    if product in product_stock:
+        if user_input.startswith('+'):
+            product_stock[product] += quantity
+        elif user_input.startswith('-'):
+            product_stock[product] -= quantity
+        else:
+            print("Неправильний формат введення. Використайте '+/-' перед кількісю.")
+    else: 
+        print(f"Продукт '{product}' не знайдено у запасах.")
+print("Кінцевий стан запасів: ", product_stock)
+    

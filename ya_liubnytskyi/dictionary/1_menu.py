@@ -18,3 +18,27 @@
 # 3. Використовуйте цикл для читання вводу від користувача.
 # 4. Якщо введено назву страви, яка є в словнику, додайте її вартість до загальної суми.
 # 5. Якщо введено "end", виведіть загальну вартість замовлення.
+
+sum = 0
+
+menu_prices = {"coffee": 10, "tea": 7, "water": 5}
+menu = list(menu_prices)
+print(f"Меню: \n {menu[0]} - {menu_prices['coffee']} грн \n {menu[1]} - {menu_prices['tea']} грн \n {menu[2]} - {menu_prices['water']} грн")
+      
+
+while True:
+   user_input =  input("Що бажаєте замовить: ").lower()
+   if user_input == "end":
+     break
+   if user_input not in menu_prices:
+     print("Такої страви немає")
+   else:
+    price = menu_prices[user_input]
+    sum += price 
+
+print(f"Загальна сума замовлення: {sum} грн")
+
+
+   
+
+

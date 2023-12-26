@@ -20,3 +20,13 @@
 # ```
 # Ім'я Petro у списку namesList відсутнє
 # ```
+
+namesList = ['Anna', 'Oleksiy', 'Viktor', 'Olga', 'Ivan']
+
+input_name = input("Введіть ім'я: ")
+
+try:
+    index = namesList.index(input_name)
+    print(f"Ім'я {input_name} має індекс {index} у списку namesList")
+except ValueError:
+    print(f"Ім'я {input_name} у списку namesList відсутнє")

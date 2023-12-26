@@ -23,3 +23,21 @@
 # 3. Приготувати обід
 # 4. Прочитати книгу
 # ```
+
+tasks = ["Зробити домашнє завдання", "Піти в магазин", "Подзвонити другу", "Приготувати обід", "Прочитати книгу"]
+
+for i, task in enumerate(tasks, start=1):
+    print(f"{i}. {task}")
+
+try:
+    task_index = int(input("Яке завдання ви виконали? Введіть номер: "))
+    if 1 <= task_index <= len(tasks):
+        tasks.pop(task_index - 1)
+      
+        print("\nОновлений список завдань:")
+        for i, task in enumerate(tasks, start=1):
+            print(f"{i}. {task}")
+    else:
+        print("Введено невірний номер завдання.")
+except ValueError:
+    print("Введено невірне значення. Введіть ціле число.")

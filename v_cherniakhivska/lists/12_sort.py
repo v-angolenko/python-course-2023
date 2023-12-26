@@ -15,3 +15,15 @@
 # ```
 # [23, 56, 78]
 # ```
+
+
+numbersList = []
+
+for i in range(3):
+    
+    number = float(input("Введіть число: "))
+    numbersList.append(number)
+
+numbersList.sort()
+
+print(numbersList)

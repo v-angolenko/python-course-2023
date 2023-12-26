@@ -21,11 +21,12 @@
 income = float(input("Ваш дохід: "))
 expenses = float(input("Ваши витрати: "))
 
+difference = income - expenses
+
+
 if income > expenses:
-    difference = income - expenses
-    print(f"Ваш бюджет позитивний. Ви у плюсі на: {difference:.2f} грн.")
+    print(f"Ваш бюджет позитивний. Ви у плюсі на: {difference} грн.")
 elif income < expenses:
-    difference = expenses - income
-    print(f"Ваш бюджет негативний. Ви у мінусі на: {difference:.2f} грн.")
+    print(f"Ваш бюджет негативний. Ви у мінусі на: {abs(difference)} грн.")
 else:
     print(f"Ваш бюджет збалансований. Ви на нулі.")

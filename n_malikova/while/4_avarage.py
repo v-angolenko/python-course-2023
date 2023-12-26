@@ -30,3 +30,24 @@
 # while True:
 #   ...
 #   break;
+
+total_sum = 0
+count = 0
+while True:
+    user_iput = input("Введіть число або '0' для авершення: ")
+    if user_iput == "0":
+        break 
+    try:
+        number = float(user_iput)
+        if number > 0:
+            total_sum += number
+            count += 1
+        else:
+            print("Будь ласка, введіть позитивне число.")
+    except ValueError:
+        print("Неправильний формат, будь ласка, введіть число або '0'.")
+if count > 0:
+    avarage = total_sum / count
+    print("Середне значення введених чисел: ", avarage)
+else:
+    print("Не введено жодного позитивного числа.")

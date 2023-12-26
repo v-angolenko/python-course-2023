@@ -26,3 +26,21 @@
 #     ___ += int(quantity_change) # int('-3') => -3
 # else:
 #     print(f"Продукт {product_name} не знайдено.")
+
+product_stock = {"apples": 10, "bananas": 3, "oranges": 8 }
+while True:
+    user_input = input("Введіть назву продукту та зміну  кількості або 'end' для завершення: ")
+    if user_input.lower() == 'end' :
+        print("Кінецевий стан запасів: ", product_stock)
+        break
+    try: 
+        product_name, quantity_change = user_input.split()
+        quantity_change = int(quantity_change)
+        
+        if product_name in product_stock:
+            product_stock[product_name] += quantity_change
+            print(f"Оновлено кількість {product_name}. Новий запас: {product_stock[product_name]}")
+        else:
+            print(f"Продукт {product_name}")
+    except:
+        print("Виникла помика, будь ласка, введіть коректні данні.")

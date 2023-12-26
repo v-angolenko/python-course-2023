@@ -13,3 +13,9 @@
 # ```
 # ['Apple', 'Samsung', 'Xiaomi', 'OnePlus']
 # ```
+
+mobileBrands = ['Apple', 'Samsung', 'Xiaomi', 'Nokla', 'OnePlus']
+if 'Nokla' in mobileBrands:
+    index_to_remove = mobileBrands.index('Nokla')
+    del mobileBrands[index_to_remove]
+print(mobileBrands)

@@ -18,3 +18,18 @@
 # 5. Викликайте `analyze_text` з введеним текстом.
 # 6. Виведіть результати аналізу: кількість слів та середня довжина слова.
 # 7. Переконайтеся, що функція коректно обробляє різні вхідні дані.
+
+def analyze_text(text):
+    words = text.split() 
+    word_count = len(words) 
+
+    total_length = sum(len(word) for word in words)
+    average_length = total_length / word_count if word_count > 0 else 0
+
+    return word_count, average_length
+
+user_text = input("Введіть текст: ")
+
+word_count, average_length = analyze_text(user_text)
+print(f"Кількість слів у тексті: {word_count}")
+print(f"Середня довжина слова: {average_length:.2f}")
